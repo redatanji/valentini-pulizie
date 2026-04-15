@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Valentini Pulizie - Servizi di pulizie professionali per case e uffici a Mestrino. Preventivo gratuito, personale formato, prodotti ecologici." />
+  <title>Valentini Pulizie | Pulizie Professionali a Mestrino</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="14" fill="#4A90D9"/>
+            <path d="M8 20 L14 8 L20 20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 16 h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Valentini Pulizie</span>
+      </a>
+
+      <nav class="header__nav" id="mainNav" aria-label="Navigazione principale">
+        <ul class="nav-list">
+          <li class="nav-item nav-item--dropdown">
+            <a href="#servizi" class="nav-link nav-link--dropdown-trigger">
+              Servizi
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li><a href="servizi/pulizie-residenziali.html" class="nav-dropdown__link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8L8 2L14 8V14H10V10H6V14H2V8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Pulizie Residenziali
+              </a></li>
+              <li><a href="servizi/pulizie-uffici.html" class="nav-dropdown__link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M2 7H14" stroke="currentColor" stroke-width="1.5"/></svg>
+                Pulizie Uffici
+              </a></li>
+              <li><a href="servizi/pulizie-post-cantiere.html" class="nav-dropdown__link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 14V8L8 3L12 8V14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Post-Cantiere
+              </a></li>
+              <li><a href="servizi/pulizie-trasloco.html" class="nav-dropdown__link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="6" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M5 6V4a3 3 0 016 0v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                Trasloco & Straordinarie
+              </a></li>
+            </ul>
+          </li>
+          <li><a href="chi-siamo.html" class="nav-link">Chi Siamo</a></li>
+          <li><a href="#recensioni" class="nav-link">Recensioni</a></li>
+          <li><a href="contatti.html" class="nav-link">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+39 346 762 8916" class="header__phone">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 2.5C2 2.5 3.5 1 5 2.5L6.5 4C7 4.5 7 5.5 6.5 6L5.5 7C6.5 9 7 9.5 9 10.5L10 9.5C10.5 9 11.5 9 12 9.5L13.5 11C15 12.5 13.5 14 13.5 14C11 16.5 1 6 2 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span>+39 346 762 8916</span>
+        </a>
+        <a href="contatti.html" class="btn btn--primary btn--sm">Richiedi Preventivo</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"><div class="hero__overlay"></div></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal-up">✦ Servizio Professionale &amp; Certificato</p>
+        <h1 class="hero__title reveal-up">
+          La tua casa e il tuo ufficio,<br/>
+          <span class="highlight">puliti come non li hai<br/>mai visti prima.</span>
+        </h1>
+        <p class="hero__subtitle reveal-up">
+          Servizio professionale di pulizie a <strong>Mestrino e provincia</strong>.<br/>
+          Interventi rapidi, prodotti ecologici, personale assicurato.
+        </p>
+        <div class="hero__cta-group reveal-up">
+          <a href="tel:+39 346 762 8916" class="btn btn--primary btn--lg">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 2.5C2 2.5 3.5 1 5 2.5L6.5 4C7 4.5 7 5.5 6.5 6L5.5 7C6.5 9 7 9.5 9 10.5L10 9.5C10.5 9 11.5 9 12 9.5L13.5 11C15 12.5 13.5 14 13.5 14C11 16.5 1 6 2 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Chiama Ora
+          </a>
+          <a href="#servizi" class="btn btn--outline btn--lg">Scopri i Servizi
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="hero__badges reveal-up">
+          <span class="badge">✓ Preventivo gratuito</span>
+          <span class="badge">✓ Assicurati</span>
+          <span class="badge">✓ Eco-friendly</span>
+        </div>
+      </div>
+      <div class="hero__scroll-indicator" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar" id="trust-bar">
+      <div class="container">
+        <div class="trust-bar__grid">
+          <div class="trust-item reveal-up">
+            <div class="trust-item__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#EBF3FC"/><path d="M10 26L10 16L18 10L26 16L26 26" stroke="#4A90D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="20" width="8" height="6" rx="1" stroke="#4A90D9" stroke-width="2"/></svg>
+            </div>
+            <div class="trust-item__number"><span class="countup" data-target="10" data-suffix="+">0</span></div>
+            <div class="trust-item__label">Anni di esperienza</div>
+          </div>
+          <div class="trust-item reveal-up" style="--delay:0.1s">
+            <div class="trust-item__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#EBF3FC"/><circle cx="18" cy="14" r="5" stroke="#4A90D9" stroke-width="2"/><path d="M9 27C9 22.5 13 19 18 19C23 19 27 22.5 27 27" stroke="#4A90D9" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div class="trust-item__number"><span class="countup" data-target="500" data-suffix="+">0</span></div>
+            <div class="trust-item__label">Clienti soddisfatti</div>
+          </div>
+          <div class="trust-item reveal-up" style="--delay:0.2s">
+            <div class="trust-item__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#EBF3FC"/><path d="M12 19L16 23L24 13" stroke="#4A90D9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="trust-item__number"><span class="countup" data-target="98" data-suffix="%">0</span></div>
+            <div class="trust-item__label">Clienti fidelizzati</div>
+          </div>
+          <div class="trust-item reveal-up" style="--delay:0.3s">
+            <div class="trust-item__icon">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><circle cx="18" cy="18" r="18" fill="#EBF3FC"/><path d="M18 10L20.5 15.5L26.5 16.5L22 21L23.5 27L18 24L12.5 27L14 21L9.5 16.5L15.5 15.5Z" stroke="#4A90D9" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="trust-item__number"><span class="countup" data-target="5" data-suffix="/5">0</span></div>
+            <div class="trust-item__label">Valutazione media</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIZI -->
+    <section class="servizi" id="servizi">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Cosa facciamo</span>
+          <h2 class="section-title">I Nostri Servizi</h2>
+          <p class="section-subtitle">Soluzioni professionali per ogni esigenza di pulizia, con prodotti certificati e personale esperto.</p>
+        </div>
+        <div class="servizi__grid">
+          <article class="service-card reveal-up">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#EBF3FC"/><path d="M12 36L12 22L24 12L36 22L36 36" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="19" y="26" width="10" height="10" rx="1.5" stroke="#4A90D9" stroke-width="2.5"/></svg>
+            </div>
+            <h3 class="service-card__title">Pulizie Residenziali</h3>
+            <p class="service-card__desc">Pulizia profonda di appartamenti, ville e case private. Ogni angolo curato nei dettagli con prodotti sicuri per la famiglia.</p>
+            <a href="servizi/pulizie-residenziali.html" class="service-card__link">Scopri di più <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.1s">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#EBF3FC"/><rect x="10" y="12" width="28" height="24" rx="2" stroke="#4A90D9" stroke-width="2.5"/><path d="M10 20H38" stroke="#4A90D9" stroke-width="2"/><rect x="16" y="26" width="6" height="5" rx="1" stroke="#4A90D9" stroke-width="2"/><rect x="26" y="26" width="6" height="5" rx="1" stroke="#4A90D9" stroke-width="2"/></svg>
+            </div>
+            <h3 class="service-card__title">Pulizie Uffici & Commerciali</h3>
+            <p class="service-card__desc">Ambienti di lavoro sempre impeccabili. Pulizia giornaliera o periodica di uffici, negozi e spazi commerciali.</p>
+            <a href="servizi/pulizie-uffici.html" class="service-card__link">Scopri di più <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.2s">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#EBF3FC"/><path d="M14 36L34 36" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><path d="M20 36L20 20L28 20L28 36" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="13" r="2" fill="#4A90D9"/></svg>
+            </div>
+            <h3 class="service-card__title">Pulizie Post-Cantiere</h3>
+            <p class="service-card__desc">Rimozione polvere da costruzione, residui di malta e materiali edili. Spazi ristrutturati pronti all'uso.</p>
+            <a href="servizi/pulizie-post-cantiere.html" class="service-card__link">Scopri di più <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.3s">
+            <div class="service-card__icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect width="48" height="48" rx="12" fill="#EBF3FC"/><rect x="10" y="18" width="28" height="18" rx="2" stroke="#4A90D9" stroke-width="2.5"/><path d="M10 24H38" stroke="#4A90D9" stroke-width="2"/><path d="M20 18L20 12L28 12L28 18" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="service-card__title">Trasloco & Straordinarie</h3>
+            <p class="service-card__desc">Prima di entrare o consegnare le chiavi: pulizie a fondo complete. Anche per eventi e interventi urgenti.</p>
+            <a href="servizi/pulizie-trasloco.html" class="service-card__link">Scopri di più <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M9 4L13 8L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIMA E DOPO -->
+<section class="prima-dopo" id="prima-dopo">
+  <div class="container">
+    <div class="section-header reveal-up">
+      <span class="section-tag">Risultati reali</span>
+      <h2 class="section-title">Prima &amp; Dopo</h2>
+      <p class="section-subtitle">Trascina il divisore per vedere la differenza. I risultati parlano da soli.</p>
+    </div>
+    <div class="ba-container reveal-up">
+
+      <!-- SLIDER 1 — Cucina -->
+      <div class="ba-slider" id="ba-slider-1">
+        <div class="ba-before">
+          <img
+            src="/img/cucina_sporca.png"
+            alt="Cucina prima della pulizia"
+            class="ba-img"
+            draggable="false"
+          />
+          <div class="ba-label ba-label--before">Prima</div>
+        </div>
+        <div class="ba-after">
+          <img
+            src="/img/cucina_pulita.png"
+            alt="Cucina dopo la pulizia professionale"
+            class="ba-img"
+            draggable="false"
+          />
+          <div class="ba-label ba-label--after">Dopo</div>
+        </div>
+        <div
+          class="ba-divider"
+          role="slider"
+          aria-label="Trascina per confrontare"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          tabindex="0"
+        >
+          <div class="ba-handle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 12L4 8M8 12L4 16M16 12L20 8M16 12L20 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDER 2 — Bagno -->
+      <div class="ba-slider" id="ba-slider-2">
+        <div class="ba-before">
+          <img
+            src="/img/bagno_sporco.png"
+            alt="Bagno prima della pulizia"
+            class="ba-img"
+            draggable="false"
+          />
+          <div class="ba-label ba-label--before">Prima</div>
+        </div>
+        <div class="ba-after">
+          <img
+            src="/img/bagno_pulito.png"
+            alt="Bagno dopo la pulizia professionale"
+            class="ba-img"
+            draggable="false"
+          />
+          <div class="ba-label ba-label--after">Dopo</div>
+        </div>
+        <div
+          class="ba-divider"
+          role="slider"
+          aria-label="Trascina per confrontare"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          tabindex="0"
+        >
+          <div class="ba-handle">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M8 12L4 8M8 12L4 16M16 12L20 8M16 12L20 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 12H16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- PERCHÉ SCEGLIERCI -->
+    <section class="perche" id="perche">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">I nostri vantaggi</span>
+          <h2 class="section-title">Perché Scegliere Noi</h2>
+          <p class="section-subtitle">Professionalità, affidabilità e attenzione al dettaglio in ogni intervento.</p>
+        </div>
+        <div class="perche__grid">
+          <div class="perche-item reveal-up">
+            <div class="perche-item__icon"><svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="26" fill="#E8F4E8"/><path d="M16 26C16 20 20 16 26 16C32 16 36 20 36 26" stroke="#2E8B57" stroke-width="2.5" stroke-linecap="round"/><path d="M20 34C20 30 22.7 28 26 28C29.3 28 32 30 32 34" stroke="#2E8B57" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="24" r="3" stroke="#2E8B57" stroke-width="2"/></svg></div>
+            <h3 class="perche-item__title">Prodotti Ecologici</h3>
+            <p class="perche-item__desc">Utilizziamo esclusivamente detergenti bio-degradabili certificati, sicuri per bambini, animali e l'ambiente.</p>
+          </div>
+          <div class="perche-item reveal-up" style="--delay:0.1s">
+            <div class="perche-item__icon"><svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="26" fill="#EBF3FC"/><rect x="16" y="20" width="20" height="16" rx="2" stroke="#4A90D9" stroke-width="2.5"/><path d="M21 20L21 17C21 15.3 23 14 26 14C29 14 31 15.3 31 17L31 20" stroke="#4A90D9" stroke-width="2.5" stroke-linecap="round"/><circle cx="26" cy="28" r="2.5" fill="#4A90D9"/></svg></div>
+            <h3 class="perche-item__title">Personale Formato</h3>
+            <p class="perche-item__desc">Ogni operatore è selezionato, formato e costantemente aggiornato. Discrezione e professionalità garantita.</p>
+          </div>
+          <div class="perche-item reveal-up" style="--delay:0.2s">
+            <div class="perche-item__icon"><svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="26" fill="#FFF3E8"/><path d="M26 14L31 18L38 17L37 24L42 28L38 33L39 40L32 38L26 42L20 38L13 40L14 33L10 28L15 24L14 17L21 18Z" stroke="#E07820" stroke-width="2" stroke-linejoin="round"/><path d="M20 26L24 30L32 22" stroke="#E07820" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="perche-item__title">Pienamente Assicurati</h3>
+            <p class="perche-item__desc">Operiamo con copertura assicurativa completa per danni a cose e persone. Sempre tutelati.</p>
+          </div>
+          <div class="perche-item reveal-up" style="--delay:0.3s">
+            <div class="perche-item__icon"><svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="26" fill="#F0EBF8"/><rect x="14" y="18" width="24" height="18" rx="3" stroke="#7B4FBF" stroke-width="2.5"/><path d="M20 18L20 15" stroke="#7B4FBF" stroke-width="2.5" stroke-linecap="round"/><path d="M32 18L32 15" stroke="#7B4FBF" stroke-width="2.5" stroke-linecap="round"/><path d="M14 25H38" stroke="#7B4FBF" stroke-width="2"/></svg></div>
+            <h3 class="perche-item__title">Preventivo Gratuito</h3>
+            <p class="perche-item__desc">Sopralluogo gratuito e preventivo dettagliato senza impegno. Prezzi trasparenti, nessun costo nascosto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section class="recensioni" id="recensioni">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">Cosa dicono di noi</span>
+          <h2 class="section-title">Le Recensioni dei Clienti</h2>
+          <p class="section-subtitle">La soddisfazione dei nostri clienti è la nostra migliore pubblicità.</p>
+        </div>
+        <div class="recensioni__grid">
+          <article class="review-card reveal-up">
+            <div class="review-card__stars">★★★★★</div>
+            <blockquote class="review-card__text">"Servizio impeccabile! Hanno pulito il mio appartamento dopo un trasloco in modo straordinario. Ogni angolo brillava."</blockquote>
+            <footer class="review-card__author">
+              <div class="review-card__avatar">MR</div>
+              <div><div class="review-card__name">Maria R.</div><div class="review-card__role">Cliente residenziale, Mestrino</div></div>
+            </footer>
+          </article>
+          <article class="review-card reveal-up" style="--delay:0.1s">
+            <div class="review-card__stars">★★★★★</div>
+            <blockquote class="review-card__text">"Utilizziamo il loro servizio per il nostro ufficio da 3 anni. Puntuali, discreti e sempre impeccabili."</blockquote>
+            <footer class="review-card__author">
+              <div class="review-card__avatar review-card__avatar--2">LP</div>
+              <div><div class="review-card__name">Luca P.</div><div class="review-card__role">Titolare ufficio, Mestrino</div></div>
+            </footer>
+          </article>
+          <article class="review-card reveal-up" style="--delay:0.2s">
+            <div class="review-card__stars">★★★★★</div>
+            <blockquote class="review-card__text">"Pulizie post-ristrutturazione fenomenali. In poche ore hanno trasformato un cantiere in una casa pronta da abitare."</blockquote>
+            <footer class="review-card__author">
+              <div class="review-card__avatar review-card__avatar--3">SA</div>
+              <div><div class="review-card__name">Sofia A.</div><div class="review-card__role">Cliente post-cantiere, Mestrino</div></div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">Domande Frequenti</h2>
+          <p class="section-subtitle">Hai dubbi? Ecco le risposte alle domande più comuni.</p>
+        </div>
+        <div class="faq__list reveal-up">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-answer-1"><span>Quanto costa il servizio di pulizie?</span><span class="faq-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <div class="faq-item__answer" id="faq-answer-1"><div class="faq-item__answer-inner"><p>Il costo dipende dalla superficie, dal tipo di intervento e dalla frequenza. Offriamo un <strong>sopralluogo e preventivo completamente gratuiti</strong>. Contattaci per un preventivo personalizzato!</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-answer-2"><span>Portate voi i prodotti e le attrezzature?</span><span class="faq-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <div class="faq-item__answer" id="faq-answer-2"><div class="faq-item__answer-inner"><p>Sì, portiamo tutto il necessario: <strong>detergenti ecologici certificati</strong>, macchinari professionali e tutto il materiale. Non devi preoccuparti di nulla.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-answer-3"><span>Siete assicurati contro i danni?</span><span class="faq-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <div class="faq-item__answer" id="faq-answer-3"><div class="faq-item__answer-inner"><p>Assolutamente sì. Siamo coperti da una <strong>polizza assicurativa RC completa</strong> che tutela i clienti per eventuali danni a cose o persone durante il servizio.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-answer-4"><span>Come posso richiedere un preventivo?</span><span class="faq-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <div class="faq-item__answer" id="faq-answer-4"><div class="faq-item__answer-inner"><p>Puoi chiamarci al <a href="tel:+39 346 762 8916">+39 346 762 8916</a>, compilare il <a href="contatti.html">form contatti</a>, oppure scriverci via email. Rispondiamo entro 24 ore.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false" aria-controls="faq-answer-5"><span>Con quale frequenza conviene fare le pulizie?</span><span class="faq-item__icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <div class="faq-item__answer" id="faq-answer-5"><div class="faq-item__answer-inner"><p>Per le abitazioni consigliamo un intervento settimanale o bisettimanale. Per gli uffici il servizio giornaliero è ideale. Offriamo piani personalizzati con <strong>tariffe agevolate</strong> per contratti periodici.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINALE -->
+    <section class="cta-finale">
+      <div class="container">
+        <div class="cta-finale__inner reveal-up">
+          <h2>Pronto per una casa <span class="highlight">impeccabile?</span></h2>
+          <p>Contattaci oggi. Il preventivo è gratuito, la soddisfazione garantita.</p>
+          <div class="cta-finale__actions">
+            <a href="tel:+39 346 762 8916" class="btn btn--primary btn--lg">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M2 2.5C2 2.5 3.5 1 5 2.5L6.5 4C7 4.5 7 5.5 6.5 6L5.5 7C6.5 9 7 9.5 9 10.5L10 9.5C10.5 9 11.5 9 12 9.5L13.5 11C15 12.5 13.5 14 13.5 14C11 16.5 1 6 2 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Chiama Ora
+            </a>
+            <a href="contatti.html" class="btn btn--outline btn--lg">Richiedi Preventivo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="header__logo footer__logo">
+          <span class="logo-icon"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="14" fill="#4A90D9"/><path d="M8 20L14 8L20 20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 16h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></span>
+          <span class="logo-text">Valentini Pulizie</span>
+        </a>
+        <p class="footer__desc">Servizi di pulizie professionali per case e uffici a Mestrino e provincia.</p>
+        <p class="footer__piva">P.IVA:  &nbsp;|&nbsp; REA: </p>
+      </div>
+      <nav class="footer__nav" aria-label="Menu footer">
+        <h4 class="footer__nav-title">Servizi</h4>
+        <ul>
+          <li><a href="servizi/pulizie-residenziali.html">Pulizie Residenziali</a></li>
+          <li><a href="servizi/pulizie-uffici.html">Pulizie Uffici</a></li>
+          <li><a href="servizi/pulizie-post-cantiere.html">Post-Cantiere</a></li>
+          <li><a href="servizi/pulizie-trasloco.html">Trasloco & Straordinarie</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav" aria-label="Menu aziendale">
+        <h4 class="footer__nav-title">Azienda</h4>
+        <ul>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="contatti.html">Preventivo Gratuito</a></li>
+        </ul>
+      </nav>
+      <div class="footer__contact">
+        <h4 class="footer__nav-title">Contatti</h4>
+        <a href="tel:+39 346 762 8916" class="footer__phone"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 2.5C2 2.5 3.5 1 5 2.5L6.5 4C7 4.5 7 5.5 6.5 6L5.5 7C6.5 9 7 9.5 9 10.5L10 9.5C10.5 9 11.5 9 12 9.5L13.5 11C15 12.5 13.5 14 13.5 14C11 16.5 1 6 2 2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>+39 346 762 8916</a>
+        <a href="mailto:" class="footer__email"></a>
+        <p class="footer__hours">Lun–Sab: 8:00–19:00</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span class="footer-year"></span> Valentini Pulizie. Tutti i diritti riservati.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Cookie Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

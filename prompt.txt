@@ -1,0 +1,85 @@
+Use these exact paths:
+
+SOURCE_ROOT = C:\Users\rida3\Desktop\WEBSITES\Imprese_pulizie
+OUTPUT_ROOT = C:\Users\rida3\Desktop\WEBSITES\Imprese_pulizie_OUTPUT_40
+
+Task:
+Create 40 separate websites from the template stored in SOURCE_ROOT.
+
+Rules:
+- Never modify, rename, move, delete, or write anything inside SOURCE_ROOT.
+- Create all output only inside OUTPUT_ROOT.
+- If OUTPUT_ROOT does not exist, create it.
+- For each company in DATA, create one folder named exactly with its slug:
+  OUTPUT_ROOT\<slug>\
+- Copy the entire template from SOURCE_ROOT into each company folder.
+- Replace placeholders in all text files if present: .html .htm .css .js .json .txt .md .xml .php
+- Keep assets, links, scripts, styles, and structure working.
+- If a field is empty, replace the placeholder with an empty string.
+- Do not invent missing data.
+- Preserve UTF-8 characters.
+- Skip replacement silently if a placeholder does not exist in some files.
+- At the end print only:
+  1) OUTPUT_ROOT
+  2) total folders created
+  3) created folder names, one per line
+
+Placeholder map:
+Valentini Pulizie Valentini Pulizie Valentini Pulizie = name
+impresa di pulizie impresa di pulizie = "impresa di pulizie"
+Mestrino Mestrino = city
+PD PD = province
+Via Calatafimi, 15, 35035 Mestrino PD, Italy Via Calatafimi, 15, 35035 Mestrino PD, Italy = address
++39 346 762 8916 +39 346 762 8916 +39 346 762 8916 +39 346 762 8916 +39 346 762 8916 = phone
++39 346 762 8916 +39 346 762 8916 = phone
+  = owner
+  = email
+  = facebook
+  = instagram
+C C = quality
+probabile = wa_status
+
+DATA format:
+slug|name|city|province|address|phone|wa_status|owner|email|facebook|instagram|quality
+
+DATA:
+g-v-pulizie-e-giardinaggio|G&V Pulizie e Giardinaggio|Santa Maria di Sala|VE|Via dei Salici, 30036 Santa Maria di Sala VE, Italy|+39 327 981 4198|probabile|||https://www.facebook.com/share/182QddLYzi/||B
+cleanteam-di-campi-ivan|Cleanteam di Campi Ivan|Cadoneghe|PD|Via G. Rigotti, 35010 Cadoneghe PD, Italy|+39 349 416 0191|probabile|Ivan Campi||https://www.facebook.com/cleanteam.snc||B
+impresa-di-pulizie-diana|Impresa di Pulizie Diana|Mestrino|PD|Via Venezia, 20, 35035 Mestrino PD, Italy|+39 328 696 9950|probabile|Andrea Ligas||https://www.facebook.com/pages/category/Home/Impresa-di-pulizie-DIANA-di-Ligas-Andrea-278924878817995/||B
+sos-service-pulizie-di-marchio-lucia|Sos service pulizie di Marchio Lucia|Conegliano|TV|Via Maggiore G. Piovesana 72, Conegliano TV, Italy|+39 371 194 9103|probabile|Lucia Marchio||||C
+impresa-di-pulizie-monica|Impresa di Pulizie Monica|Montebelluna|TV|Via Toronto 11, Montebelluna TV, Italy|+39 348 794 6545|probabile|Monica||||C
+osiride-cleaning-srl|Osiride Cleaning srl|Montebelluna|TV|Via Leonardo Da Vinci 16, Montebelluna TV, Italy|+39 370 332 6183|probabile|||||C
+splendi-i-impresa-pulizie|Splendi I Impresa pulizie|Vittorio Veneto|TV|Viale della Vittoria 315, Vittorio Veneto TV, Italy|+39 389 616 8437|probabile|||||C
+profumo-di-iris|Profumo di Iris|Mogliano Veneto|TV|Via Francesco Barbiero 28, Mogliano Veneto TV, Italy|+39 389 555 0054|probabile|||||C
+impresa-di-pulizie-scapin-antonio|Impresa di pulizie Scapin Antonio|Mogliano Veneto|TV|Via dello Scoutismo 2D, Mogliano Veneto TV, Italy|+39 347 322 8798|probabile|Antonio Scapin||||C
+uniclean-impresa-di-pulizie-di-alessia|Uniclean impresa di pulizie di Alessia|Preganziol|TV|Via Virgilio, 12, 31022 Preganziol TV, Italy|+39 328 345 6073|probabile|Alessia||||C
+impresa-di-pulizie-preganziol|Impresa di Pulizie|Preganziol|TV||+39 346 014 0334|probabile|||||C
+il-quadrifoglio-preganziol|Il Quadrifoglio|Preganziol|TV||+39 380 635 4254|probabile|||||C
+langolo-del-pulito|L’angolo del pulito|Preganziol|TV||+39 320 044 0457|probabile|||||C
+puli-art-di-lipari-marco|Puli Art di Lipari Marco & C SAS|Villorba|TV||+39 393 984 3573|probabile|Marco Lipari||||C
+impresa-di-pulizie-alice|Impresa di Pulizie Alice|Paese|TV|Via Europa Unita, 20, 31038 Paese TV, Italy|+39 349 617 8297|probabile|Alice||||C
+la-fenice-quinto-di-treviso|La Fenice|Quinto di Treviso|TV|Via Aldo Moro 37, Quinto di Treviso TV, Italy|+39 333 850 8210|probabile|||||C
+sd-clean-comfort|SD clean & comfort|San Vendemiano|TV||+39 351 664 4504|probabile|||||C
+impresa-di-pulizie-sally-scotti-sas|Impresa Di Pulizie Sally Scotti Sas|Spresiano|TV|V. Croda Granda 8D, Spresiano TV, Italy|+39 342 168 4390|probabile|Sally Scotti||||C
+a-formiga|A Formiga s.n.c di Biason P. e Veck D.|Spresiano|TV|Via G. Vecellio 70, Spresiano TV, Italy|+39 342 606 2996|probabile|P. Biason / D. Veck||||C
+progetto24|Progetto24|Lovadina|TV|Via G. Pascoli 9, Lovadina, TV, Italy|+39 380 766 4658|probabile|||||C
+cleaning-services-di-soufiane-souad|Cleaning Services di Soufiane Souad|Orsago|TV|Via Ugo la Malfa, snc, 31010 Orsago TV, Italy|+39 347 164 8865|probabile|Soufiane Souad||||C
+arcobaleno-90-impresa-di-pulizie|Arcobaleno 90 Impresa di Pulizie|Treviso|TV||+39 349 569 5152|verificato|Stefano Checo||||C
+dimensione-pulito|Dimensione Pulito|Treviso|TV|Via Aldo Voltolin, 3, 31100 Treviso TV, Italy|+39 335 805 1660|probabile|||||C
+abid-ali-servizi-di-pulizia|Abid Ali – Servizi di Pulizia|Treviso|TV|Strada Zermanese, 168, 31100 Treviso TV, Italy|+39 350 804 7057|probabile|Abid Ali||||C
+casagrande-di-dalla-francesca-gabriel|Casagrande Di Dalla Francesca Gabriel sas|Valdobbiadene|TV|Piazza Guadagnini Luigi, 18, 31049 Valdobbiadene TV, Italy|+39 340 612 3915|probabile|Gabriel Dalla Francesca||||C
+a-team-multiservice|A-Team multiservice|Valdobbiadene / dintorni|TV||+39 389 069 5798|probabile|||||C
+mb-servizi-pulizie-e-manutenzioni-treviso|MB Servizi - Pulizie e Manutenzioni Treviso|Crocetta del Montello|TV|Via Erizzo, 151, 31035 Crocetta del Montello TV, Italy|+39 352 043 7380|probabile|||||C
+impresa-di-pulizie-kenia|Impresa Di Pulizie Kenia|Motta di Livenza|TV|Via Riva Monticano, 18, 31045 Motta di Livenza TV, Italy|+39 347 804 5606|probabile|||||C
+larte-del-pulito-di-bettin-simona|L'Arte del Pulito di Bettin Simona|Ponte di Piave|TV|Via Fontane, 30, 31047 Ponte di Piave TV, Italy|+39 329 423 1877|probabile|Simona Bettin||||C
+nico-pulizie|Nico Pulizie|San Donà di Piave|VE|30027 San Donà di Piave, Metropolitan City of Venice, Italy|+39 345 234 4916|probabile||| |https://www.instagram.com/nico_pulizie/|C
+clean-service-di-vazzoler-barbara|Clean Service Di Vazzoler Barbara|Noventa di Piave|VE|Via Leonardo da Vinci 11, 30020 Noventa di Piave VE, Italy|+39 349 260 8056|probabile|Barbara Vazzoler||||C
+gea-multiservice|GEA Multiservice|Noventa di Piave|VE|Via Salvatore Quasimodo 2, 30020 Noventa di Piave VE, Italy|+39 392 137 6159|probabile|||||C
+jesolo-servizi|Jesolo Servizi|Jesolo|VE|Via Cristo Re, 10/A, 30016 Jesolo VE, Italy|+39 340 459 7914|probabile|||||C
+p-m-pulizie|P&M Pulizie|Mejaniga / Cadoneghe|PD|Via Trilussa, 14, 35010 Mejaniga PD, Italy|+39 327 722 7332|probabile|||||C
+giada-imprese-di-pulizia|Giada Imprese Di Pulizia Di Paggiaro Alice & C.|Cadoneghe|PD|15/1 v. Rigotti, Cadoneghe, PD 35010, Italy|+39 346 232 2001|probabile|Alice Paggiaro||||C
+servizi-e-pulizie-di-marana-mattia|Servizi e Pulizie di Marana Mattia & C. S.a.S|Rubano|PD|Via Boschetta, 25, 35030 Rubano PD, Italy|+39 331 568 2094|probabile|Mattia Marana||||C
+valentini-pulizie|Valentini Pulizie|Mestrino|PD|Via Calatafimi, 15, 35035 Mestrino PD, Italy|+39 346 762 8916|probabile|||||C
+new-impresa-di-pulizia|New Impresa di Pulizia|Cittadella|PD|Via Postumia di Levante, 79, 35013 Cittadella PD, Italy|+39 366 162 7975|probabile|||||C
+mada-impresa-di-pulizie-2|MADA IMPRESA DI PULIZIE 2|Cittadella / area|PD||+39 347 383 5408|probabile|||||C
+mada-impresa-di-pulizie|mada impresa di pulizie|Tombolo|PD|Via degli Ezzelini, 23, 35019 Tombolo PD, Italy|+39 347 598 3473|probabile|||||C
